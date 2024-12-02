@@ -1,0 +1,136 @@
+﻿/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f8fa;
+    color: #333;
+}
+
+/* Header/Nav Bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #0056b3;
+    color: white;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+    .nav-links li {
+        margin-right: 1.5rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+/* Main Content */
+.container {
+    padding: 2rem;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.title {
+    color: #0056b3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.photo-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.profile-photo {
+    max-width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #0056b3;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 600px;
+    text-align: left;
+}
+
+.introduction p {
+    font-weight: bold;
+}
+
+.introduction ul {
+    list-style-type: disc;
+    margin: 0 auto; /* Center the list */
+    padding-left: 2rem; 
+    max-width: 800px; 
+    text-align: left; 
+}
+
+.introduction li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem; /* Readability */
+    color: #333; 
+}
+
+
+/* Footer */
+.footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #004494;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .photo-and-text {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
